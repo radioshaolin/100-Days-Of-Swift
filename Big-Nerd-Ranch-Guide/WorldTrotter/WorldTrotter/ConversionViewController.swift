@@ -86,10 +86,24 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ConversionViewController loaded its view.")
         
         fahrenheitValue = Measurement(value: 100, unit: .fahrenheit)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        let hour = Calendar.current.component(.hour, from: Date())
+        
+        switch hour {
+        case 7...19:
+            view.backgroundColor = UIColor.white
+        default:
+            view.backgroundColor = UIColor.darkGray
+            
+        }
+    }
 }
 
 
