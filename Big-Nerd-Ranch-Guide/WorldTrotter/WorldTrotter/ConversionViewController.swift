@@ -37,8 +37,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
-        if let text = fahrengheitTextField.text, let value = Double(text) {
-            fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
+        if let text = textField.text, let number = numberFormatter.number(from: text) {
+            fahrenheitValue = Measurement(value: number.doubleValue, unit: .fahrenheit)
         } else {
             fahrenheitValue = nil
         }
@@ -63,10 +63,19 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         
         let letterCharacters = NSCharacterSet.letters
         let spaceCharacters = NSCharacterSet.whitespacesAndNewlines
-        let punctuationAndSpecialCharacters = CharacterSet.init(charactersIn: "!#$&@~()[];,<>/?*|'\'" )
+        let punctuationAndSpecialCharacters = CharacterSet.init(charactersIn: "!#$&@~()[];<>/?*|'\'" )
         
-        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
-        let replacementTextHasDecimalSeparator = string.range(of: ".")
+//        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
+//        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        
+        let currentLocale = Locale.current
+        let decimalSeparator = currentLocale.decimalSeparator ?? "."
+        
+        let existingTextHasDecimalSeparator
+            = textField.text?.range(of: decimalSeparator)
+        let replacementTextHasDecimalSeparator = string.range(of: decimalSeparator)
+        
+        
         let containLetterCharacter = string.rangeOfCharacter(from: letterCharacters)
         let containSpacesAndNewLineCharacters = string.rangeOfCharacter(from: spaceCharacters)
         let containPunctuationAndSpecialCharacters = string.rangeOfCharacter(from: punctuationAndSpecialCharacters)
