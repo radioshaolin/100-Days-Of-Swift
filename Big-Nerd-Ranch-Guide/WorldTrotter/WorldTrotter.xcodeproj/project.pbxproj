@@ -38,6 +38,10 @@
 		D5E7CB9E1F361B7B0086C09D /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D5E7CB9F1F3623EC0086C09D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D5E7CBA51F36240B0086C09D /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D5E7CC011F36561C0086C09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E7CC021F36561C0086C09D /* WorldTrotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterTests.swift; sourceTree = "<group>"; };
+		D5E7CC041F36561C0086C09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E7CC051F36561C0086C09D /* WorldTrotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				D579598C1F332F7100F99A7A /* WorldTrotter */,
 				D579598B1F332F7100F99A7A /* Products */,
 				D57959A11F337E8800F99A7A /* Frameworks */,
+				D5E7CC001F36561C0086C09D /* WorldTrotterTests */,
+				D5E7CC031F36561C0086C09D /* WorldTrotterUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +97,24 @@
 				D57959A21F337E8900F99A7A /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5E7CC001F36561C0086C09D /* WorldTrotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5E7CC011F36561C0086C09D /* Info.plist */,
+				D5E7CC021F36561C0086C09D /* WorldTrotterTests.swift */,
+			);
+			path = WorldTrotterTests;
+			sourceTree = "<group>";
+		};
+		D5E7CC031F36561C0086C09D /* WorldTrotterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5E7CC041F36561C0086C09D /* Info.plist */,
+				D5E7CC051F36561C0086C09D /* WorldTrotterTests.swift */,
+			);
+			path = WorldTrotterUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
