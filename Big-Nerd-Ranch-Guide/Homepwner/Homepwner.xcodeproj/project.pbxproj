@@ -15,6 +15,7 @@
 		D53A6A2C1F377AE3000121D6 /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A6A2B1F377AE3000121D6 /* HomepwnerUITests.swift */; };
 		D53A6A3A1F377C3B000121D6 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A6A391F377C3B000121D6 /* ItemsViewController.swift */; };
 		D53A6A3C1F377E37000121D6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A6A3B1F377E37000121D6 /* Item.swift */; };
+		D5AA7AE01F38A15700DF82BE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA7ADF1F38A15700DF82BE /* ItemCell.swift */; };
 		D5C79D6C1F37880000720DB8 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C79D6B1F37880000720DB8 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		D53A6A2D1F377AE3000121D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D53A6A391F377C3B000121D6 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		D53A6A3B1F377E37000121D6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D5AA7ADF1F38A15700DF82BE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		D5C79D6B1F37880000720DB8 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,14 +103,15 @@
 		D53A6A0A1F377AE3000121D6 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
-				D53A6A0B1F377AE3000121D6 /* AppDelegate.swift */,
 				D53A6A0F1F377AE3000121D6 /* Main.storyboard */,
-				D53A6A121F377AE3000121D6 /* Assets.xcassets */,
-				D53A6A141F377AE3000121D6 /* LaunchScreen.storyboard */,
-				D53A6A171F377AE3000121D6 /* Info.plist */,
 				D53A6A391F377C3B000121D6 /* ItemsViewController.swift */,
+				D5AA7ADF1F38A15700DF82BE /* ItemCell.swift */,
 				D53A6A3B1F377E37000121D6 /* Item.swift */,
 				D5C79D6B1F37880000720DB8 /* ItemStore.swift */,
+				D53A6A121F377AE3000121D6 /* Assets.xcassets */,
+				D53A6A0B1F377AE3000121D6 /* AppDelegate.swift */,
+				D53A6A171F377AE3000121D6 /* Info.plist */,
+				D53A6A141F377AE3000121D6 /* LaunchScreen.storyboard */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				D53A6A3C1F377E37000121D6 /* Item.swift in Sources */,
 				D5C79D6C1F37880000720DB8 /* ItemStore.swift in Sources */,
 				D53A6A0C1F377AE3000121D6 /* AppDelegate.swift in Sources */,
+				D5AA7AE01F38A15700DF82BE /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
