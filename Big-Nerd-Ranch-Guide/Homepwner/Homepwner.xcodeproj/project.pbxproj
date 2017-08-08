@@ -20,6 +20,7 @@
 		D5FA9D8C1F38CFE500F6FA08 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA9D8B1F38CFE500F6FA08 /* DetailViewController.swift */; };
 		D5FA9D8E1F392FE900F6FA08 /* DetailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA9D8D1F392FE900F6FA08 /* DetailTextField.swift */; };
 		D5FA9D901F39362E00F6FA08 /* DateCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA9D8F1F39362E00F6FA08 /* DateCreatedViewController.swift */; };
+		D5FA9D921F39EDBE00F6FA08 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA9D911F39EDBE00F6FA08 /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D5FA9D8B1F38CFE500F6FA08 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D5FA9D8D1F392FE900F6FA08 /* DetailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTextField.swift; sourceTree = "<group>"; };
 		D5FA9D8F1F39362E00F6FA08 /* DateCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCreatedViewController.swift; sourceTree = "<group>"; };
+		D5FA9D911F39EDBE00F6FA08 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				D5FA9D8B1F38CFE500F6FA08 /* DetailViewController.swift */,
 				D5FA9D8D1F392FE900F6FA08 /* DetailTextField.swift */,
 				D5FA9D8F1F39362E00F6FA08 /* DateCreatedViewController.swift */,
+				D5FA9D911F39EDBE00F6FA08 /* ImageStore.swift */,
 				D5C79D6B1F37880000720DB8 /* ItemStore.swift */,
 				D53A6A3B1F377E37000121D6 /* Item.swift */,
 				D53A6A121F377AE3000121D6 /* Assets.xcassets */,
@@ -279,6 +282,7 @@
 				D5C79D6C1F37880000720DB8 /* ItemStore.swift in Sources */,
 				D5FA9D8C1F38CFE500F6FA08 /* DetailViewController.swift in Sources */,
 				D5FA9D8E1F392FE900F6FA08 /* DetailTextField.swift in Sources */,
+				D5FA9D921F39EDBE00F6FA08 /* ImageStore.swift in Sources */,
 				D53A6A0C1F377AE3000121D6 /* AppDelegate.swift in Sources */,
 				D5AA7AE01F38A15700DF82BE /* ItemCell.swift in Sources */,
 				D5FA9D901F39362E00F6FA08 /* DateCreatedViewController.swift in Sources */,
