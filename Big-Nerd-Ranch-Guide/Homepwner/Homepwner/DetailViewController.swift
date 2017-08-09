@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    
+    // MARK: - Properties
     var item: Item! {
         didSet {
             navigationItem.title = item.name
@@ -31,7 +31,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         formatter.timeStyle = .none
         return formatter
     }()
-    
+    // MARK: - Outlets
     @IBOutlet var nameField: DetailTextField!
     @IBOutlet var serialNumberField: DetailTextField!
     @IBOutlet var valueField: DetailTextField!
@@ -39,6 +39,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var trashPictureButton: UIBarButtonItem!
     
+    // MARK: - Actions
     @IBAction func removePicture(_ sender: UIBarButtonItem) {
         
         imageStore.deleteImage(forKey: item.itemKey)
@@ -87,6 +88,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         view.endEditing(true)
     }
 
+    // MARK: - View life cycle
     override func viewDidLoad() {
         valueField.keyboardType = .numberPad
     }
@@ -130,6 +132,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
     }
     
+    // MARK: - Methods
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -154,6 +157,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         dismiss(animated: true, completion: nil)
     }
     
+    // MARK: - Seques
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "changeDate"?:
