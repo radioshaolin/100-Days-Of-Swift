@@ -14,6 +14,8 @@
 		D5F63EB91F3C820000E430B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F63EB71F3C820000E430B9 /* LaunchScreen.storyboard */; };
 		D5F63EC41F3C820000E430B9 /* TouchTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F63EC31F3C820000E430B9 /* TouchTrackerTests.swift */; };
 		D5F63ECF1F3C820000E430B9 /* TouchTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F63ECE1F3C820000E430B9 /* TouchTrackerUITests.swift */; };
+		D5F63EDD1F3C8C8000E430B9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F63EDC1F3C8C8000E430B9 /* Line.swift */; };
+		D5F63EDF1F3C8D9800E430B9 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F63EDE1F3C8D9800E430B9 /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D5F63ECA1F3C820000E430B9 /* TouchTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F63ECE1F3C820000E430B9 /* TouchTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTrackerUITests.swift; sourceTree = "<group>"; };
 		D5F63ED01F3C820000E430B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F63EDC1F3C8C8000E430B9 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		D5F63EDE1F3C8D9800E430B9 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				D5F63EB51F3C820000E430B9 /* Assets.xcassets */,
 				D5F63EB71F3C820000E430B9 /* LaunchScreen.storyboard */,
 				D5F63EBA1F3C820000E430B9 /* Info.plist */,
+				D5F63EDC1F3C8C8000E430B9 /* Line.swift */,
+				D5F63EDE1F3C8D9800E430B9 /* DrawView.swift */,
 			);
 			path = TouchTracker;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F63EDD1F3C8C8000E430B9 /* Line.swift in Sources */,
 				D5F63EB11F3C820000E430B9 /* ViewController.swift in Sources */,
+				D5F63EDF1F3C8D9800E430B9 /* DrawView.swift in Sources */,
 				D5F63EAF1F3C820000E430B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.radioshaolin.TouchTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.radioshaolin.TouchTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
