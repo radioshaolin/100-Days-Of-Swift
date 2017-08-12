@@ -29,6 +29,7 @@ class PhotoStore {
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
         }()
+    let imageStore = ImageStore()
     
     func fetchInterestingPhotos(completion: @escaping (PhotosResult) -> Void) {
         
@@ -61,20 +62,33 @@ class PhotoStore {
     
     func fetchImage(for photo: Photo, completion: @escaping (ImageResult) -> Void) {
         
+        let photoKey = photo.photoID
+        if let image = imageStore.image(forKey: photoKey) {
+            OperationQueue.main.addOperation {
+                completion(.success(image))
+            }
+            return
+        }
+        
         let photoURL = photo.remoteURL
         let request = URLRequest(url: photoURL)
         
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
             
-            if let httpStatus = response as? HTTPURLResponse {
-                //check for http errors
-                print("fetchImage:")
-                print("statusCode is \(httpStatus.statusCode)")
-                print("Header fields are \(httpStatus.allHeaderFields)")
-            }
+//            if let httpStatus = response as? HTTPURLResponse {
+//                //check for http errors
+//                print("fetchImage:")
+//                print("statusCode is \(httpStatus.statusCode)")
+//                print("Header fields are \(httpStatus.allHeaderFields)")
+//            }
             
             let result = self.processImageRequest(data: data, error: error)
+            
+            if case let .success(image) = result {
+                self.imageStore.setImage(image, forKey: photoKey)
+            }
+            
             OperationQueue.main.addOperation {
                 completion(result)
             }
